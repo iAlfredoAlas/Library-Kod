@@ -18,6 +18,7 @@ public class Genre implements Serializable {
     private static final long serialVersionUID = 123456789L;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_genre")
     @Getter
