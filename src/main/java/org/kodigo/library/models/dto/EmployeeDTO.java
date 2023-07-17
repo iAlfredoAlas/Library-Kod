@@ -24,5 +24,5 @@ public class EmployeeDTO  {
 
     @Getter
     @Setter
-    private Boolean isActiveEmployee = Boolean.TRUE;
+    private Boolean isActiveEmployee;
 }

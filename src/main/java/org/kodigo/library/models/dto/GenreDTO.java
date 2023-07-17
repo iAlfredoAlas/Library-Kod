@@ -19,5 +19,5 @@ public class GenreDTO {
 
     @Getter
     @Setter
-    private Boolean isActiveGenre = Boolean.TRUE;
+    private Boolean isActiveGenre;
 }

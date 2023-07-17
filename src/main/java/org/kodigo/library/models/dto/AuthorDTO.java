@@ -28,5 +28,5 @@ public class AuthorDTO {
 
     @Getter
     @Setter
-    private Boolean isActiveAuthor = Boolean.TRUE;
+    private Boolean isActiveAuthor;
 }

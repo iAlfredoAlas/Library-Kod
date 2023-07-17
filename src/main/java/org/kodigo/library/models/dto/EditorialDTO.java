@@ -21,9 +21,9 @@ public class EditorialDTO {
 
     @Getter
     @Setter
-    private Date fechaAdd;
+    private Date dateAdd;
     
     @Getter
     @Setter
-    private Boolean isActiveEditorial = Boolean.TRUE;
+    private Boolean isActiveEditorial;
 }
