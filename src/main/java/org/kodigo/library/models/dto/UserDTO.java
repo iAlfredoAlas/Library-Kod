@@ -33,5 +33,5 @@ public class UserDTO {
 
     @Getter
     @Setter
-    private Boolean isActiveUser = Boolean.TRUE;
+    private Boolean isActiveUser;
 }
