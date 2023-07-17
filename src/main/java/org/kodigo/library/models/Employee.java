@@ -17,7 +17,7 @@ import java.io.Serializable;
 
 public class Employee implements Serializable {
 
-    private static final long serialVersionUID = 123456789L;
+    private static final long serialVersionUID = 123456799L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -40,7 +40,7 @@ public class Employee implements Serializable {
     private String employeeNumber;
 
     @Basic(optional = false)
-    @Column(name = "estatus_employee")
+    @Column(name = "status_employee")
     @Getter
     @Setter
     private Boolean isActiveEmployee = Boolean.TRUE;
