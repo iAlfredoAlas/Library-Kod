@@ -9,7 +9,6 @@ import lombok.Setter;
 import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class EditorialDTO {
     @Getter
     @Setter
