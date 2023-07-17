@@ -8,6 +8,7 @@ import org.hibernate.annotations.SQLDelete;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table (name = "author")
@@ -15,7 +16,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Author implements Serializable{
-    private static final long serialVersionUID = 123456789L;
+    private static final long serialVersionUID = 123456779L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,7 +33,19 @@ public class Author implements Serializable{
     private String nameAuthor;
 
     @Basic(optional = false)
-    @Column(name = "estatus_author")
+    @Column(name = "country_birth")
+    @Getter
+    @Setter
+    private String nacionality;
+
+    @Basic(optional = false)
+    @Column(name = "nacionality_author")
+    @Getter
+    @Setter
+    private Date dateBorn;
+
+    @Basic(optional = false)
+    @Column(name = "status_author")
     @Getter
     @Setter
     private Boolean isActiveAuthor = Boolean.TRUE;
