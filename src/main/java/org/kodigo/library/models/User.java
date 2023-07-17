@@ -24,31 +24,31 @@ public class User implements Serializable{
     @Column(name = "id_user")
     @Getter
     @Setter
-    private Long id_user;
+    private Long idUser;
 
     @Basic(optional = false)
     @Column(name = "name_user")
     @Getter
     @Setter
-    private String name_user;
+    private String nameUser;
 
     @Basic(optional = false)
     @Column(name = "carnet_user ")
     @Getter
     @Setter
-    private String carnet_user;
+    private String carnetUser;
 
     @Basic(optional = false)
     @Column(name = "email_user")
     @Getter
     @Setter
-    private String email_user;
+    private String emailUser;
 
     @Basic(optional = false)
     @Column(name = "phone_user")
     @Getter
     @Setter
-    private String phone_user;
+    private String phoneUser;
 
     @Basic(optional = false)
     @Column(name = "status_user")
