@@ -32,7 +32,7 @@ public class Genre implements Serializable {
     private String nameGenre;
 
     @Basic(optional = false)
-    @Column(name = "estatus_genre")
+    @Column(name = "status_genre")
     @Getter
     @Setter
     private Boolean isActiveGenre = Boolean.TRUE;
