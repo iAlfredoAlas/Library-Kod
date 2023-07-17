@@ -28,7 +28,7 @@ public class Editorial implements Serializable {
     private Long idEditorial;
 
     @Basic(optional = false)
-    @Column(name = "nombre_editorial")
+    @Column(name = "name_editorial")
     @Getter
     @Setter
     private String nameEditorial;
