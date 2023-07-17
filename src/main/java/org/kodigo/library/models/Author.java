@@ -39,7 +39,7 @@ public class Author implements Serializable{
     private String nacionality;
 
     @Basic(optional = false)
-    @Column(name = "nacionality_author")
+    @Column(name = "date_born")
     @Getter
     @Setter
     private Date dateBorn;
