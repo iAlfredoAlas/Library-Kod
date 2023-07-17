@@ -36,7 +36,7 @@ public class Author implements Serializable{
     @Column(name = "country_birth")
     @Getter
     @Setter
-    private String nacionality;
+    private String nationality;
 
     @Basic(optional = false)
     @Column(name = "date_born")

@@ -20,7 +20,7 @@ public class AuthorDTO {
 
     @Getter
     @Setter
-    private String nacionality;
+    private String nationality;
 
     @Getter
     @Setter
