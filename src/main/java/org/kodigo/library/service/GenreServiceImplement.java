@@ -25,7 +25,7 @@ public class GenreServiceImplement implements IGenreService {
     @Override
     public List<Genre> findCustom(Boolean flat) {
         log.info("Show actives");
-        return genreRepository.findByIsActive(flat);
+        return genreRepository.findByIsActiveGenre(flat);
     }
 
     @Override
