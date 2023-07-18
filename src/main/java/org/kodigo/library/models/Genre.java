@@ -10,7 +10,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table (name = "genre")
+@Table(name = "genre")
 @SQLDelete(sql = "UPDATE genre SET status_genre = false WHERE id_genre=?")
 @AllArgsConstructor
 @NoArgsConstructor
