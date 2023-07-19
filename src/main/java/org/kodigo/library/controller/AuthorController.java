@@ -27,12 +27,12 @@ public class AuthorController implements ICrudGenericController<AuthorDTO, Long>
 
     @Override
     public ResponseEntity<?> findAll() {
-        return ResponseFactory.responseOk(authorService.getAll().stream().map(mapAuthor -> mapper.map(mapAuthor, AuthorDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(authorService.getAll().stream().map(mapAuthor -> mapper.map(mapAuthor, Author.class)).collect(Collectors.toList()));
     }
 
     @Override
     public ResponseEntity<?> findCustom(Boolean filter) {
-        return ResponseFactory.responseOk(authorService.findCustom(filter).stream().map(mapAuthor -> mapper.map(mapAuthor, AuthorDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(authorService.findCustom(filter).stream().map(mapAuthor -> mapper.map(mapAuthor, Author.class)).collect(Collectors.toList()));
     }
 
     @Override
