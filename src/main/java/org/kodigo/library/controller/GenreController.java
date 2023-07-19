@@ -27,12 +27,12 @@ public class GenreController implements ICrudGenericController<GenreDTO, Long> {
 
     @Override
     public ResponseEntity<?> findAll() {
-        return ResponseFactory.responseOk(genreService.getAll().stream().map(mapGenre -> mapper.map(mapGenre, GenreDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(genreService.getAll().stream().map(mapGenre -> mapper.map(mapGenre, Genre.class)).collect(Collectors.toList()));
     }
 
     @Override
     public ResponseEntity<?> findCustom(Boolean filter) {
-        return ResponseFactory.responseOk(genreService.findCustom(filter).stream().map(mapGenre -> mapper.map(mapGenre, GenreDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(genreService.findCustom(filter).stream().map(mapGenre -> mapper.map(mapGenre, Genre.class)).collect(Collectors.toList()));
     }
 
     @Override
