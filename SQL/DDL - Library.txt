@@ -29,7 +29,7 @@ CREATE TABLE editorial (
 );
 
 CREATE TABLE genre (
-  idgenre INT AUTO_INCREMENT NOT NULL,
+  id_genre INT AUTO_INCREMENT NOT NULL,
   name_genre VARCHAR(40) NOT NULL,
   status_genre BOOL NOT NULL,
   CONSTRAINT PK_genre PRIMARY KEY (idGenre)
