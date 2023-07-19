@@ -29,12 +29,12 @@ public class EditorialController implements ICrudGenericController<EditorialDTO,
 
     @Override
     public ResponseEntity<?> findAll() {
-        return ResponseFactory.responseOk(editorialService.getAll().stream().map(mapEditorial -> mapper.map(mapEditorial, EditorialDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(editorialService.getAll().stream().map(mapEditorial -> mapper.map(mapEditorial, Editorial.class)).collect(Collectors.toList()));
     }
 
     @Override
     public ResponseEntity<?> findCustom(Boolean filter) {
-        return ResponseFactory.responseOk(editorialService.findCustom(filter).stream().map(mapEditorial -> mapper.map(mapEditorial, EditorialDTO.class)).collect(Collectors.toList()));
+        return ResponseFactory.responseOk(editorialService.findCustom(filter).stream().map(mapEditorial -> mapper.map(mapEditorial, Editorial.class)).collect(Collectors.toList()));
     }
 
     @Override
