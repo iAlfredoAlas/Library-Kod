@@ -38,7 +38,7 @@ public class EditorialServiceImplement implements  IEditorialService{
     @Override
     public Editorial add(Editorial model) {
 
-        log.info("Add Genre");
+        log.info("Add Author");
         return editorialRepository.save(model);
     }
 
