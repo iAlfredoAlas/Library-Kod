@@ -8,10 +8,10 @@ import org.hibernate.annotations.SQLDelete;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
+
 
 @Entity
-@Table (name = "user ")
+@Table (name = "user")
 @SQLDelete(sql = "UPDATE user  SET status_user  = false WHERE id_user=?")
 @AllArgsConstructor
 @NoArgsConstructor
