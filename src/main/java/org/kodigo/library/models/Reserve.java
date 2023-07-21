@@ -1,5 +1,6 @@
 package org.kodigo.library.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,7 @@ public class Reserve implements Serializable {
     @Setter
     private Long idReserve;
 
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC")
     @Basic(optional = false)
     @Column(name = "date_reserve")
     @Getter

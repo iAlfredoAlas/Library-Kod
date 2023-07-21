@@ -1,0 +1,12 @@
+INSERT INTO employee (name_employee, employee_number, status_employee)
+VALUES
+  ('John Doe', 'JD1234', true),
+  ('Alice Smith', 'AS5678', true),
+  ('Michael Johnson', 'MJ2345', true),
+  ('Emily Brown', 'EB7890', true),
+  ('William Davis', 'WD4567', true),
+  ('Sophia Wilson', 'SW8901', true),
+  ('James Anderson', 'JA3456', true),
+  ('Olivia Martin', 'OM6789', true),
+  ('Alexander Taylor', 'AT9012', true),
+  ('Ava Thomas', 'AT1234', true);

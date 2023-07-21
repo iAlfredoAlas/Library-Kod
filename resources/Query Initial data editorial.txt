@@ -1,0 +1,16 @@
+insert into editorial (id_editorial, name_editorial, date_add, status_editorial)
+values  (1, 'Editorial 1', '2000-01-01', 1),
+        (2, 'Editorial 2', '2000-01-01', 1),
+        (3, 'Editorial 3', '2000-01-01', 1),
+        (4, 'Editorial 4', '2000-01-01', 1),
+        (5, 'Editorial 5', '2000-01-01', 1),
+        (6, 'Editorial 6', '2000-01-01', 1),
+        (7, 'Editorial 7', '2000-01-01', 1),
+        (8, 'Editorial 8', '2000-01-01', 1),
+        (9, 'Editorial 9', '2000-01-01', 1),
+        (10, 'Editorial 10', '2000-01-01', 1),
+        (11, 'Editorial 11', '2000-01-01', 1),
+        (12, 'Editorial 12', '2000-01-01', 1),
+        (13, 'Editorial 13', '2000-01-01', 1),
+        (14, 'Editorial 14', '2000-01-01', 1),
+        (15, 'Editorial 15', '2000-01-01', 1);

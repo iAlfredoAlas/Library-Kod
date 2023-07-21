@@ -1,0 +1,22 @@
+INSERT INTO user (name_user, carnet_user, email_user, phone_user, status_user)
+VALUES
+  ('Jane Smith', 'JS20230001', 'jane.smith@example.com', '22577777', true),
+  ('Michael Johnson', 'MJ20230002', 'michael.johnson@example.com', '22577778', true),
+  ('Emily Brown', 'EB20230003', 'emily.brown@example.com', '22577779', true),
+  ('William Davis', 'WD20230004', 'william.davis@example.com', '22577780', true),
+  ('Sophia Wilson', 'SW20230005', 'sophia.wilson@example.com', '22577781', true),
+  ('James Anderson', 'JA20230006', 'james.anderson@example.com', '22577782', true),
+  ('Olivia Martin', 'OM20230007', 'olivia.martin@example.com', '22577783', true),
+  ('Alexander Taylor', 'AT20230008', 'alexander.taylor@example.com', '22577784', true),
+  ('Ava Thomas', 'AT20230009', 'ava.thomas@example.com', '22577785', true),
+  ('Benjamin Garcia', 'BG20230010', 'benjamin.garcia@example.com', '22577786', true),
+  ('Emma Hernandez', 'EH20230011', 'emma.hernandez@example.com', '22577787', true),
+  ('Lucas Perez', 'LP20230012', 'lucas.perez@example.com', '22577788', true),
+  ('Oliver Torres', 'OT20230013', 'oliver.torres@example.com', '22577789', true),
+  ('Isabella Diaz', 'ID20230014', 'isabella.diaz@example.com', '22577790', true),
+  ('Mia Rodriguez', 'MR20230015', 'mia.rodriguez@example.com', '22577791', true),
+  ('Ethan Martinez', 'EM20230016', 'ethan.martinez@example.com', '22577792', true),
+  ('Charlotte Lopez', 'CL20230017', 'charlotte.lopez@example.com', '22577793', true),
+  ('Amelia Gonzalez', 'AG20230018', 'amelia.gonzalez@example.com', '22577794', true),
+  ('Liam Sanchez', 'LS20230019', 'liam.sanchez@example.com', '22577795', true),
+  ('Noah Cruz', 'NC20230020', 'noah.cruz@example.com', '22577796', true);

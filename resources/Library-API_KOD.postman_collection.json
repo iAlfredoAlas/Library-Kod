@@ -1,0 +1,1172 @@
+{
+	"info": {
+		"_postman_id": "8b67a37b-d7af-42fc-8c55-b564a9338da9",
+		"name": "Library-API_KOD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25094058"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/find/active/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"find",
+								"active",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/find/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"find",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveAuthor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameAuthor\": \"J.K. Rowling\",\r\n    \"nationality\": \"Reino Unido\",\r\n    \"dateBorn\": \"1965-07-31T05:00:00.000+00:00\",\r\n    \"isActiveAuthor\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAuthor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameAuthor\": \"J.K. Rowling\",\r\n    \"nationality\": \"Reino Unido\",\r\n    \"dateBorn\": \"1965-07-31T05:00:00.000+00:00\",\r\n    \"isActiveAuthor\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/author/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"author",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/find/active/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"find",
+								"active",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/find/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"find",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveEditorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEditorial\": \"Editorial 5\",\r\n    \"dateAdd\": \"2000-01-01\",\r\n    \"isActiveEditorial\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEditorial",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEditorial\": \"Editorial 5\",\r\n    \"dateAdd\": \"2000-01-01\",\r\n    \"isActiveEditorial\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEditorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/editorial/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"editorial",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/find/active/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"find",
+								"active",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/find/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"find",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveGenre",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameGenre\": \"Science Fiction\",\r\n    \"isActiveGenre\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateGenre",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameGenre\": \"Science Fiction\",\r\n    \"isActiveGenre\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/genre/delete/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"genre",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/find/actives/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"find",
+								"actives",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/find/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"find",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameBook\": \"Test\",\r\n    \"publicationDate\": \"1977-01-28\",\r\n    \"totalPage\": 50,\r\n    \"quantityStock\": 1,\r\n    \"isActiveBook\": true,\r\n    \"positionRack\": \"Estante1-A\",\r\n    \"idAuthor\": {\r\n        \"idAuthor\": 2\r\n    },\r\n    \"idEditorial\": {\r\n        \"idEditorial\": 2\r\n    },\r\n    \"idGenre\": {\r\n        \"idGenre\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameBook\": \"Test\",\r\n    \"publicationDate\": \"1977-01-28\",\r\n    \"totalPage\": 50,\r\n    \"quantityStock\": 1,\r\n    \"isActiveBook\": true,\r\n    \"positionRack\": \"Estante1-A\",\r\n    \"idAuthor\": {\r\n        \"idAuthor\": 2\r\n    },\r\n    \"idEditorial\": {\r\n        \"idEditorial\": 2\r\n    },\r\n    \"idGenre\": {\r\n        \"idGenre\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/book/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"book",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/find/actives/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"find",
+								"actives",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/find/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"find",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEmployee\": \"William Davis\",\r\n    \"employeeNumber\": \"WD4567\",\r\n    \"isActiveEmployee\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEmployee\": \"William Davis\",\r\n    \"employeeNumber\": \"WD4567\",\r\n    \"isActiveEmployee\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/employee/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"employee",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/find/active/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"find",
+								"active",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/find/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"find",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameUser\": \"Sophia Wilson\",\r\n    \"carnetUser\": \"SW20230005\",\r\n    \"emailUser\": \"sophia.wilson@example.com\",\r\n    \"phoneUser\": \"22577781\",\r\n    \"isActiveUser\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameUser\": \"Sophia Wilson\",\r\n    \"carnetUser\": \"SW20230005\",\r\n    \"emailUser\": \"sophia.wilson@example.com\",\r\n    \"phoneUser\": \"22577781\",\r\n    \"isActiveUser\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/user/delete/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"user",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reserve",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/find/active/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"find",
+								"active",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/find/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveReserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateReserve\": \"2023-07-15\",\r\n    \"isActiveReserve\": true,\r\n    \"idBook\": {\r\n        \"idBook\": 97\r\n    },\r\n    \"idEmployee\": {\r\n        \"idEmployee\": 1\r\n    },\r\n    \"idUser\": {\r\n        \"idUser\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateReserve",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateReserve\": \"2023-07-15\",\r\n    \"isActiveReserve\": true,\r\n    \"idBook\": {\r\n        \"idBook\": 97\r\n    },\r\n    \"idEmployee\": {\r\n        \"idEmployee\": 1\r\n    },\r\n    \"idUser\": {\r\n        \"idUser\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/library-kod-api/api/library/reserve/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"library-kod-api",
+								"api",
+								"library",
+								"reserve",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

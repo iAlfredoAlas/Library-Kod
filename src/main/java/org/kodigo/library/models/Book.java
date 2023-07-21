@@ -26,7 +26,7 @@ public class Book implements Serializable {
     private Long idBook;
 
     @Basic(optional = false)
-    @Column(name = "name_book")
+    @Column(name = "book_name")
     @Getter
     @Setter
     private String nameBook;
