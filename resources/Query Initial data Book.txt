@@ -1,0 +1,81 @@
+INSERT INTO book (book_name, publication_date, total_page, quantity_stock, status_book, position_rack, id_author, id_editorial, id_genre)
+VALUES
+  -- Libros de J.K. Rowling
+  ('Harry Potter and the Sorcerer''s Stone', '1997-06-26', 320, 10, true, 'Estante1-A', 1, 1, 6),
+  ('Harry Potter and the Chamber of Secrets', '1998-07-02', 352, 10, true, 'Estante1-B', 1, 1, 6),
+  ('Harry Potter and the Prisoner of Azkaban', '1999-07-08', 448, 10, true, 'Estante1-C', 1, 1, 6),
+  
+  -- Libros de Stephen King
+  ('The Shining', '1977-01-28', 688, 10, true, 'Estante2-A', 2, 2, 5),
+  ('It', '1986-09-15', 1138, 10, true, 'Estante2-B', 2, 2, 5),
+  ('The Stand', '1978-09-01', 1152, 10, true, 'Estante2-C', 2, 2, 5),
+  
+  -- Libros de Gabriel García Márquez
+  ('One Hundred Years of Solitude', '1967-05-30', 417, 10, true, 'Estante3-A', 3, 3, 11),
+  ('Love in the Time of Cholera', '1985-03-06', 348, 10, true, 'Estante3-B', 3, 3, 3),
+  ('Chronicle of a Death Foretold', '1981-11-27', 120, 10, true, 'Estante3-C', 3, 3, 11),
+  
+  -- Libros de Jane Austen
+  ('Pride and Prejudice', '1813-01-28', 432, 10, true, 'Estante4-A', 4, 4, 3),
+  ('Sense and Sensibility', '1811-10-30', 384, 10, true, 'Estante4-B', 4, 4, 3),
+  ('Emma', '1815-12-23', 474, 10, true, 'Estante4-C', 4, 4, 3),
+  
+  -- Libros de Haruki Murakami
+  ('Norwegian Wood', '1987-08-28', 296, 10, true, 'Estante5-A', 5, 5, 11),
+  ('Kafka on the Shore', '2002-09-12', 505, 10, true, 'Estante5-B', 5, 5, 6),
+  ('1Q84', '2009-05-29', 928, 10, true, 'Estante5-C', 5, 5, 6),
+  
+  -- Libros de Isabel Allende
+  ('The House of the Spirits', '1982-01-22', 433, 10, true, 'Estante6-A', 6, 6, 3),
+  ('Eva Luna', '1987-02-15', 368, 10, true, 'Estante6-B', 6, 6, 3),
+  ('Paula', '1994-03-22', 368, 10, true, 'Estante6-C', 6, 6, 7),
+  
+  -- Libros de Ernest Hemingway
+  ('The Old Man and the Sea', '1952-09-01', 112, 10, true, 'Estante7-A', 7, 7, 12),
+  ('A Farewell to Arms', '1929-09-27', 355, 10, true, 'Estante7-B', 7, 7, 12),
+  ('For Whom the Bell Tolls', '1940-10-21', 471, 10, true, 'Estante7-C', 7, 7, 12),
+  
+  -- Libros de Leo Tolstoy
+  ('War and Peace', '1869-01-20', 1225, 10, true, 'Estante8-A', 8, 8, 17),
+  ('Anna Karenina', '1877-01-20', 864, 10, true, 'Estante8-B', 8, 8, 17),
+  ('The Death of Ivan Ilyich', '1886-12-22', 134, 10, true, 'Estante8-C', 8, 8, 12),
+  
+  -- Libros de Agatha Christie
+  ('Murder on the Orient Express', '1934-01-01', 256, 10, true, 'Estante9-A', 9, 9, 2),
+  ('Death on the Nile', '1937-11-01', 336, 10, true, 'Estante9-B', 9, 9, 2),
+  ('The Murder of Roger Ackroyd', '1926-06-19', 384, 10, true, 'Estante9-C', 9, 9, 2),
+  
+  -- Libros de Mark Twain
+  ('The Adventures of Huckleberry Finn', '1885-12-10', 366, 10, true, 'Estante10-A', 10, 10, 14),
+  ('The Adventures of Tom Sawyer', '1876-12-01', 224, 10, true, 'Estante10-B', 10, 10, 14),
+  ('A Connecticut Yankee in King Arthur''s Court', '1889-12-01', 320, 10, true, 'Estante10-C', 10, 10, 14),
+  
+  -- Libros de Gabriela Mistral
+  ('Desolación', '1922-01-01', 64, 10, true, 'Estante11-A', 11, 11, 10),
+  ('Ternura', '1924-01-01', 75, 10, true, 'Estante11-B', 11, 11, 10),
+  ('Lagar', '1954-01-01', 82, 10, true, 'Estante11-C', 11, 11, 10),
+  
+  -- Libros de Albert Camus
+  ('The Stranger', '1942-01-01', 123, 10, true, 'Estante12-A', 12, 12, 12),
+  ('The Plague', '1947-01-01', 308, 10, true, 'Estante12-B', 12, 12, 12),
+  ('The Fall', '1956-01-01', 147, 10, true, 'Estante12-C', 12, 12, 12),
+  
+  -- Libros de Fyodor Dostoevsky
+  ('Crime and Punishment', '1866-01-01', 551, 10, true, 'Estante13-A', 13, 13, 15),
+  ('The Brothers Karamazov', '1880-01-01', 796, 10, true, 'Estante13-B', 13, 13, 15),
+  ('The Idiot', '1869-01-01', 656, 10, true, 'Estante13-C', 13, 13, 15),
+  
+  -- Libros de Maya Angelou
+  ('I Know Why the Caged Bird Sings', '1969-01-01', 289, 10, true, 'Estante14-A', 14, 14, 7),
+  ('Gather Together in My Name', '1974-01-01', 214, 10, true, 'Estante14-B', 14, 14, 7),
+  ('Singin'' and Swingin'' and Gettin'' Merry Like Christmas', '1976-01-01', 288, 10, true, 'Estante14-C', 14, 14, 7),
+  
+  -- Libros de Pablo Neruda
+  ('Twenty Love Poems and a Song of Despair', '1924-01-01', 70, 10, true, 'Estante15-A', 15, 15, 10),
+  ('Canto General', '1950-01-01', 600, 10, true, 'Estante15-B', 15, 15, 10),
+  ('The Captain''s Verses', '1952-01-01', 76, 10, true, 'Estante15-C', 15, 15, 10),
+  
+  -- Libros de George R.R. Martin
+  ('A Game of Thrones', '1996-08-06', 694, 10, true, 'Estante16-A', 16, 4, 6),
+  ('A Clash of Kings', '1998-11-16', 768, 10, true, 'Estante16-B', 16, 4, 6),
+  ('A Storm of Swords', '2000-08-08', 992, 10, true, 'Estante16-C', 16, 4, 6);

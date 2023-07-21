@@ -1,0 +1,17 @@
+INSERT INTO author (name_author, country_birth, date_born, status_author)
+VALUES ('J.K. Rowling', 'Reino Unido', '1965-07-31', true),
+       ('Stephen King', 'Estados Unidos', '1947-09-21', true),
+       ('Gabriel García Márquez', 'Colombia', '1927-03-06', true),
+       ('Jane Austen', 'Reino Unido', '1775-12-16', true),
+       ('Haruki Murakami', 'Japón', '1949-01-12', true),
+       ('Isabel Allende', 'Chile', '1942-08-02', true),
+       ('Ernest Hemingway', 'Estados Unidos', '1899-07-21', true),
+       ('Leo Tolstoy', 'Rusia', '1828-09-09', true),
+       ('Agatha Christie', 'Reino Unido', '1890-09-15', true),
+       ('Mark Twain', 'Estados Unidos', '1835-11-30', true),
+       ('Gabriela Mistral', 'Chile', '1889-04-07', true),
+       ('Albert Camus', 'Francia', '1913-11-07', true),
+       ('Fyodor Dostoevsky', 'Rusia', '1821-11-11', true),
+       ('Maya Angelou', 'Estados Unidos', '1928-04-04', true),
+       ('Pablo Neruda', 'Chile', '1904-07-12', true),
+       ('George R.R. Martin', 'Estados Unidos', '1948-09-20', true);

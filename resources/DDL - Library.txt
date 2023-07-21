@@ -1,0 +1,106 @@
+/*================================================================================*/
+/* DDL SCRIPT                                                                     */
+/*================================================================================*/
+/*  Title    :                                                                    */
+/*  FileName : LibraryModel.ecm                                                   */
+/*  Platform : MySQL 5.6                                                          */
+/*  Version  : Concept                                                            */
+/*  Date     : domingo, 16 de julio de 2023                                       */
+/*================================================================================*/
+/*================================================================================*/
+/* CREATE TABLES                                                                  */
+/*================================================================================*/
+
+CREATE TABLE author (
+  id_author INT AUTO_INCREMENT NOT NULL,
+  name_author VARCHAR(40) NOT NULL,
+  country_birth VARCHAR(20) NOT NULL,
+  date_born DATE NOT NULL,
+  status_author BOOL NOT NULL,
+  CONSTRAINT PK_author PRIMARY KEY (id_author)
+);
+
+CREATE TABLE editorial (
+  id_editorial INT AUTO_INCREMENT NOT NULL,
+  name_editorial VARCHAR(40) NOT NULL,
+  date_add DATE NOT NULL,
+  status_editorial BOOL NOT NULL,
+  CONSTRAINT PK_editorial PRIMARY KEY (id_editorial)
+);
+
+CREATE TABLE genre (
+  id_genre INT AUTO_INCREMENT NOT NULL,
+  name_genre VARCHAR(40) NOT NULL,
+  status_genre BOOL NOT NULL,
+  CONSTRAINT PK_genre PRIMARY KEY (idGenre)
+);
+
+CREATE TABLE book (
+  id_book INT AUTO_INCREMENT NOT NULL,
+  book_name VARCHAR(40) NOT NULL,
+  publication_date DATE NOT NULL,
+  total_page INT NOT NULL,
+  quantity_stock INT NOT NULL,
+  status_book BOOL NOT NULL,
+  position_rack VARCHAR(40) NOT NULL,
+  id_author INT NOT NULL,
+  id_editorial INT NOT NULL,
+  id_genre INT NOT NULL,
+  CONSTRAINT PK_book PRIMARY KEY (id_book)
+);
+
+CREATE TABLE employee (
+  id_employee INT AUTO_INCREMENT NOT NULL,
+  name_employee VARCHAR(40) NOT NULL,
+  employee_number VARCHAR(40) NOT NULL,
+  status_employee BOOL NOT NULL,
+  CONSTRAINT PK_employee PRIMARY KEY (id_employee)
+);
+
+CREATE TABLE user (
+  id_user INT AUTO_INCREMENT NOT NULL,
+  name_user VARCHAR(40) NOT NULL,
+  carnet_user VARCHAR(10) NOT NULL,
+  email_user VARCHAR(40) NOT NULL,
+  phone_user VARCHAR(11) NOT NULL,
+  status_user BOOL NOT NULL,
+  CONSTRAINT PK_user PRIMARY KEY (id_user)
+);
+
+CREATE TABLE reserve (
+  id_reserve INT AUTO_INCREMENT NOT NULL,
+  date_reserve DATE NOT NULL,
+  status_reserve BOOL NOT NULL,
+  id_book INT NOT NULL,
+  id_employee INT NOT NULL,
+  id_user INT NOT NULL,
+  CONSTRAINT PK_reserve PRIMARY KEY (id_reserve)
+);
+
+/*================================================================================*/
+/* CREATE FOREIGN KEYS                                                            */
+/*================================================================================*/
+
+ALTER TABLE book
+  ADD CONSTRAINT FK_Book_Author
+  FOREIGN KEY (id_author) REFERENCES author (id_author);
+
+ALTER TABLE book
+  ADD CONSTRAINT FK_Book_Editorial
+  FOREIGN KEY (id_editorial) REFERENCES editorial (id_editorial);
+
+ALTER TABLE book
+  ADD CONSTRAINT FK_Book_Genre
+  FOREIGN KEY (id_genre) REFERENCES genre (idGenre);
+
+ALTER TABLE reserve
+  ADD CONSTRAINT FK_Reserve_Book
+  FOREIGN KEY (id_book) REFERENCES book (id_book);
+
+ALTER TABLE reserve
+  ADD CONSTRAINT FK_Reserve_Employee
+  FOREIGN KEY (id_employee) REFERENCES employee (id_employee);
+
+ALTER TABLE reserve
+  ADD CONSTRAINT FK_Reserve_User
+  FOREIGN KEY (id_user) REFERENCES user (id_user);
