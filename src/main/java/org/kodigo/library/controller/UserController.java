@@ -53,7 +53,7 @@ public class UserController implements ICrudGenericController<UserDTO, Long> {
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(userService.add(mapper.map(model, User.class)));
+                        .responseCreated(userService.add(mapper.map(model, User.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }

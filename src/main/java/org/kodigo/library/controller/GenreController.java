@@ -53,7 +53,7 @@ public class GenreController implements ICrudGenericController<GenreDTO, Long> {
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(genreService.add(mapper.map(model, Genre.class)));
+                        .responseCreated(genreService.add(mapper.map(model, Genre.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }

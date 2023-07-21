@@ -55,7 +55,7 @@ public class EditorialController implements ICrudGenericController<EditorialDTO,
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(editorialService.add(mapper.map(model, Editorial.class)));
+                        .responseCreated(editorialService.add(mapper.map(model, Editorial.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }

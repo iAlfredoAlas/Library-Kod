@@ -54,7 +54,7 @@ public class BookController implements ICrudGenericController<BookDTO, Long> {
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(bookService.add(mapper.map(model, Book.class)));
+                        .responseCreated(bookService.add(mapper.map(model, Book.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }

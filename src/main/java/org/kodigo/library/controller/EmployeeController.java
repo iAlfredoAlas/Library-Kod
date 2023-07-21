@@ -52,7 +52,7 @@ public class EmployeeController implements ICrudGenericController<EmployeeDTO, L
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(employeeService.add(mapper.map(model, Employee.class)));
+                        .responseCreated(employeeService.add(mapper.map(model, Employee.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }

@@ -53,7 +53,7 @@ public class AuthorController implements ICrudGenericController<AuthorDTO, Long>
         } else {
             try {
                 return ResponseFactory
-                        .responseOk(authorService.add(mapper.map(model, Author.class)));
+                        .responseCreated(authorService.add(mapper.map(model, Author.class)));
             } catch (DataAccessException e) {
                 return ResponseFactory.responseNotFound(e.getMostSpecificCause().getMessage());
             }
