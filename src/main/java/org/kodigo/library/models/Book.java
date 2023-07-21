@@ -44,7 +44,7 @@ public class Book implements Serializable {
     private Integer totalPage;
 
     @Basic(optional = false)
-    @Column(name = "quantity_stoc")
+    @Column(name = "quantity_stock")
     @Getter
     @Setter
     private Integer quantityStock;
