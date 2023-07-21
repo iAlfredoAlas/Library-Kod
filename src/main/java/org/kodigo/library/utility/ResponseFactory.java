@@ -59,4 +59,27 @@ public class ResponseFactory {
         return new ResponseEntity<Object>(res, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    public static ResponseEntity<?> responseCreated() {
+        Map<String, Object> res = new HashMap<>();
+        res.put("HTTP", HttpStatus.CREATED);
+        res.put("Mensaje", "Recurso creado con éxito");
+        return new ResponseEntity<>(res, HttpStatus.CREATED);
+    }
+
+    public static ResponseEntity<?> responseCreated(Object data) {
+        Map<String, Object> res = new HashMap<>();
+        res.put("data", data);
+        res.put("HTTP", HttpStatus.CREATED);
+        res.put("Mensaje", "Recurso creado con éxito");
+        return new ResponseEntity<>(res, HttpStatus.CREATED);
+    }
+
+    public static ResponseEntity<?> responseCreated(Object data, String mensaje) {
+        Map<String, Object> res = new HashMap<>();
+        res.put("data", data);
+        res.put("HTTP", HttpStatus.CREATED);
+        res.put("Mensaje", mensaje);
+        return new ResponseEntity<>(res, HttpStatus.CREATED);
+    }
+
 }
