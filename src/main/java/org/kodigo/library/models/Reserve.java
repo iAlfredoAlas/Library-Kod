@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "reserve")
-@SQLDelete(sql = "UPDATE reserve SET status_reserver = false WHERE id_reserve=?")
+@SQLDelete(sql = "UPDATE reserve SET status_reserve = false WHERE id_reserve=?")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Reserve implements Serializable {
