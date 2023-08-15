@@ -24,7 +24,7 @@ import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class GenreTests {
+public class GenreServiceImplementTest {
 
     @Mock
     private IGenreRepository genreRepository;
