@@ -1,4 +1,4 @@
-package org.kodigo.library;
+package org.kodigo.library.service;
 
 import org.junit.Before;
 import org.junit.Test;
