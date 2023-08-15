@@ -2,16 +2,13 @@ package org.kodigo.library.service;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
+import org.kodigo.library.models.Employee;
+import org.kodigo.library.repository.IEmployeeRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.kodigo.library.models.Employee;
-import org.kodigo.library.repository.IEmployeeRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.ArrayList;
@@ -23,7 +20,6 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class EmployeeServiceImplementTest {
 
     @Mock
@@ -38,7 +34,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(1)
     public void testGetAllEmployees() {
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee(1L, "Employee 1", "E123", true));
@@ -52,7 +47,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(2)
     public void testFindEmployeeById_ExistingEmployee() {
         Employee employee = new Employee(1L, "Employee 1", "E123", true);
 
@@ -64,7 +58,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(3)
     public void testFindEmployeeById_NonExistingEmployee() {
         when(employeeRepository.findById(1L)).thenReturn(Optional.empty());
 
@@ -72,7 +65,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(4)
     public void testAddEmployee() {
         Employee employee = new Employee(1L, "Employee 1", "E123", true);
 
@@ -84,7 +76,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(5)
     public void testUpdateEmployee() {
         Employee existingEmployee = new Employee(1L, "Employee 1", "E123", true);
         Employee updatedEmployee = new Employee(1L, "Updated Employee", "E456", false);
@@ -100,7 +91,6 @@ public class EmployeeServiceImplementTest {
     }
 
     @Test
-    @Order(6)
     public void testDeleteEmployee() {
         Long employeeId = 1L;
 

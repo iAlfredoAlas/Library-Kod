@@ -2,17 +2,13 @@ package org.kodigo.library.service;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.kodigo.library.service.BookServiceImplement;
+import org.kodigo.library.models.Book;
+import org.kodigo.library.repository.IBookRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.kodigo.library.models.Book;
-import org.kodigo.library.repository.IBookRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.ArrayList;
@@ -25,7 +21,6 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class BookServiceImplementTest {
 
     @Mock
@@ -40,7 +35,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(1)
     public void testGetAllBooks() {
         List<Book> books = new ArrayList<>();
         books.add(new Book(1L, "Book 1", new Date(), 200, 100, true, "A1", null, null, null));
@@ -54,7 +48,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(2)
     public void testFindBookById_ExistingBook() {
         Book book = new Book(1L, "Book 1", new Date(), 200, 100, true, "A1", null, null, null);
 
@@ -66,7 +59,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(3)
     public void testFindBookById_NonExistingBook() {
         when(bookRepository.findById(1L)).thenReturn(Optional.empty());
 
@@ -74,7 +66,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(4)
     public void testAddBook() {
         Book book = new Book(1L, "Book 1", new Date(), 200, 100, true, "A1", null, null, null);
 
@@ -86,7 +77,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(5)
     public void testUpdateBook() {
         Book existingBook = new Book(1L, "Book 1", new Date(), 200, 100, true, "A1", null, null, null);
         Book updatedBook = new Book(1L, "Updated Book", new Date(), 250, 120, false, "A2", null, null, null);
@@ -102,7 +92,6 @@ public class BookServiceImplementTest {
     }
 
     @Test
-    @Order(6)
     public void testDeleteBook() {
         Long bookId = 1L;
 

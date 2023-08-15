@@ -2,17 +2,13 @@ package org.kodigo.library.service;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.kodigo.library.service.AuthorServiceImplement;
+import org.kodigo.library.models.Author;
+import org.kodigo.library.repository.IAuthorRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.kodigo.library.models.Author;
-import org.kodigo.library.repository.IAuthorRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.ArrayList;
@@ -25,7 +21,6 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class AuthorServiceImplementTest {
 
     @Mock
@@ -40,7 +35,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(1)
     public void testGetAllAuthors() {
         List<Author> authors = new ArrayList<>();
         authors.add(new Author(1L, "Author 1", "Country 1", new Date(), true));
@@ -54,7 +48,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(2)
     public void testFindAuthorById_ExistingAuthor() {
         Author author = new Author(1L, "Author 1", "Country 1", new Date(), true);
 
@@ -66,7 +59,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(3)
     public void testFindAuthorById_NonExistingAuthor() {
         when(authorRepository.findById(1L)).thenReturn(Optional.empty());
 
@@ -74,7 +66,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(4)
     public void testAddAuthor() {
         Author author = new Author(1L, "Author 1", "Country 1", new Date(), true);
 
@@ -86,7 +77,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(5)
     public void testUpdateAuthor() {
         Author existingAuthor = new Author(1L, "Author 1", "Country 1", new Date(), true);
         Author updatedAuthor = new Author(1L, "Updated Author", "Country 1", new Date(), false);
@@ -101,7 +91,6 @@ public class AuthorServiceImplementTest {
     }
 
     @Test
-    @Order(6)
     public void testDeleteAuthor() {
         Long authorId = 1L;
 

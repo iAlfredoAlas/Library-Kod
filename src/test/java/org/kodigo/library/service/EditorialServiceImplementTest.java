@@ -1,17 +1,14 @@
 package org.kodigo.library.service;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.kodigo.library.service.EditorialServiceImplement;
+import org.kodigo.library.models.Editorial;
+import org.kodigo.library.repository.IEditorialRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.kodigo.library.models.Editorial;
-import org.kodigo.library.repository.IEditorialRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.ArrayList;
@@ -24,7 +21,6 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class EditorialServiceImplementTest {
 
     @Mock
@@ -39,7 +35,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(1)
     public void testGetAllEditorials() {
         List<Editorial> editorials = new ArrayList<>();
         editorials.add(new Editorial(1L, "Editorial 1", new Date(), true));
@@ -53,7 +48,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(2)
     public void testFindEditorialById_ExistingEditorial() {
         Editorial editorial = new Editorial(1L, "Editorial 1", new Date(), true);
 
@@ -65,7 +59,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(3)
     public void testFindEditorialById_NonExistingEditorial() {
         when(editorialRepository.findById(1L)).thenReturn(Optional.empty());
 
@@ -73,7 +66,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(4)
     public void testAddEditorial() {
         Editorial editorial = new Editorial(1L, "Editorial 1", new Date(), true);
 
@@ -85,7 +77,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(5)
     public void testUpdateEditorial() {
         Editorial existingEditorial = new Editorial(1L, "Editorial 1", new Date(), true);
         Editorial updatedEditorial = new Editorial(1L, "Updated Editorial", new Date(), false);
@@ -100,7 +91,6 @@ public class EditorialServiceImplementTest {
     }
 
     @Test
-    @Order(6)
     public void testDeleteEditorial() {
         Long editorialId = 1L;
 

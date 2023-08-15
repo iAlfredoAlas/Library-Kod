@@ -1,17 +1,14 @@
 package org.kodigo.library.service;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.kodigo.library.service.GenreServiceImplement;
+import org.kodigo.library.models.Genre;
+import org.kodigo.library.repository.IGenreRepository;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.kodigo.library.models.Genre;
-import org.kodigo.library.repository.IGenreRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.util.ArrayList;
@@ -23,7 +20,6 @@ import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class GenreServiceImplementTest {
 
     @Mock
@@ -38,7 +34,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(1)
     public void testGetAllGenres() {
         List<Genre> genres = new ArrayList<>();
         genres.add(new Genre(1L, "Genre 1", true));
@@ -52,7 +47,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(2)
     public void testFindGenreById_ExistingGenre() {
         Genre genre = new Genre(1L, "Genre 1", true);
 
@@ -64,7 +58,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(3)
     public void testFindGenreById_NonExistingGenre() {
         when(genreRepository.findById(1L)).thenReturn(Optional.empty());
 
@@ -72,7 +65,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(4)
     public void testAddGenre() {
         Genre genre = new Genre(1L, "Genre 1", true);
 
@@ -84,7 +76,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(5)
     public void testUpdateGenre() {
         Genre existingGenre = new Genre(1L, "Genre 1", true);
         Genre updatedGenre = new Genre(1L, "Updated Genre", false);
@@ -99,7 +90,6 @@ public class GenreServiceImplementTest {
     }
 
     @Test
-    @Order(6)
     public void testDeleteGenre() {
         Long genreId = 1L;
 
